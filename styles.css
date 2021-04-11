@@ -10,40 +10,135 @@
 div.nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 6rem;
-    width: 100vw;
+    align-items: center;
     background: #304353;
 }
 
 div.logo {
     font-size: 1.5rem;
+    margin: .5rem;
     color: #bcc3c7;
 }
 
-ul.nav-links {
-    display: flex;
+
+.navbar-links ul {
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    display: flex;
 }
 
-ul li {
-    margin: 0 2vw;
+.navbar-links li {
     list-style: none;
-    font-size: 1.1rem;
 }
 
-ul li a {
+.navbar-links li a {
     text-decoration: none;
     color: #88949B;
-    padding: 0.5vw;
+    padding: .5rem 1rem;
+    display: block;
 }
 
-ul li a:hover {
+.navbar-links li:hover {
     color: #304353;
     background: #fff;
-    padding: 0.5rem;
 }
 
+@media screen and (max-width:425px) {
+    /* The Navigation section */
+
+    div.nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    div.logo {
+        font-size: 1.5rem;
+    }
+
+    .toggle-button {
+        margin-top: 15px;
+    }
+
+
+    /* ------------The hero section ------------------*/
+    div.hero-section {
+        padding: 9rem 0rem;
+    }
+
+    div.hero-content-heading h3 {
+        font-size: 1.5rem;
+    }
+
+    div.hero-content-heading p {
+        font-size: 0.9rem;
+    }
+
+
+    /* ---------------The sub hero section------------- */
+    div.hero-background {
+        padding: 8rem 1rem;
+    }
+
+    div.background {
+        padding: 0px 0.5rem;
+        width: 100%;
+    }
+
+    div.background h4 {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    div.background p {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+
+    .hero-background-pos {
+        display: none;
+    }
+
+
+    /* -------------The snapshot box content section------------- */
+    div.snapshot-box-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
+    /* --------------The gallery section ------------------*/
+    div.gallery-section {
+        padding: 0.5rem;
+    }
+
+}
+
+
+/*  */
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+/* The hero section */
 div.hero-section {
     background: #304353;
     padding: 10rem;
@@ -87,6 +182,10 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
+
+
+
+/* The sub-hero section */
 div.hero-background {
     background: #f0f0f0;
     padding: 10rem;
@@ -130,6 +229,8 @@ div.hero-background-pos {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
+
+/* The snapshot team section */
 div.snapshot-team {
     background: #f0f0f0;
     text-align: center;
@@ -198,7 +299,7 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
+
 }
 
 div.box1 h5 {
@@ -208,6 +309,9 @@ div.box1 h5 {
     font-size: 1rem;
 }
 
+
+
+/* The gallery section */
 div.gallery-section {
     background: #fff;
     padding: 4rem;
@@ -232,10 +336,10 @@ div.gallery-content p {
 }
 
 div.gallery-img {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
 }
 
 div.img {
@@ -247,6 +351,8 @@ div.img img {
     height: 180px;
 }
 
+
+/* The footer section */
 div.footer {
     background: #304353;
     padding: 3rem;
@@ -269,7 +375,6 @@ div.footer-content p {
     letter-spacing: 2px;
     padding-top: 0.8rem;
 }
-
 div.footer-input {
     display: flex;
     justify-content: center;
@@ -287,6 +392,7 @@ input[type="text"] {
     color: #f0f0f0;
     font-size: 1rem;
     border-radius: 2px;
+    justify-content: center;
 }
 
 input[type="email"] {
@@ -299,6 +405,7 @@ input[type="email"] {
     color: #f0f0f0;
     font-size: 1rem;
     border-radius: 2px;
+    justify-content: center;
 }
 
 ::placeholder {
@@ -345,3 +452,150 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+@media screen and (max-width:425px) {
+    /* The Navigation section */
+
+    div.nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    div.logo {
+        font-size: 1.5rem;
+    }
+
+    .toggle-button {
+        margin-top: 15px;
+    }
+
+
+    /* ------------The hero section ------------------*/
+    div.hero-section {
+        padding: 9rem 0rem;
+    }
+
+    div.hero-content-heading h3 {
+        font-size: 1.5rem;
+    }
+
+    div.hero-content-heading p {
+        font-size: 0.9rem;
+    }
+
+
+    /* ---------------The sub hero section------------- */
+    div.hero-background {
+        padding: 8rem 1rem;
+    }
+
+    div.background {
+        padding: 0px 0.5rem;
+        width: 100%;
+    }
+
+    div.background h4 {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    div.background p {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+
+    .hero-background-pos {
+        display: none;
+    }
+
+
+    /* -------------The snapshot box content section------------- */
+    div.snapshot-box-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
+    /* --------------The gallery section ------------------*/
+    div.gallery-section {
+        padding: 0.5rem;
+    }
+
+}
+
+
+
+/* ======================================================== */
+
+
+@media screen and (max-width:375px) {
+    /* The Navigation section */
+
+    div.nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    div.logo {
+        font-size: 1.5rem;
+    }
+
+
+    /* ------------The hero section ------------------*/
+    div.hero-section {
+        padding: 9rem 0rem;
+    }
+
+    div.hero-content-heading h3 {
+        font-size: 1.5rem;
+    }
+
+    div.hero-content-heading p {
+        font-size: 0.9rem;
+    }
+
+
+    /* ---------------The sub hero section------------- */
+    div.hero-background {
+        padding: 8rem 1rem;
+    }
+
+    div.background {
+        padding: 0px 0.5rem;
+        width: 100%;
+    }
+
+    div.background h4 {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    div.background p {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+
+    .hero-background-pos {
+        display: none;
+    }
+
+
+    /* -------------The snapshot box content section------------- */
+    div.snapshot-box-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
+    /* --------------The gallery section ------------------*/
+    div.gallery-section {
+        padding: 0.5rem;
+    }
